@@ -4,7 +4,7 @@ AV.Cloud.define("hello", function(request, response) {
                 var myQuery = new AV.Query(myData);
                 myQuery.find({
                              success:function(results) {
-                                 response.success(results.length);
+                                 response.success(results);
                              },
                              error:function(error) {
                                  response.error(error);
