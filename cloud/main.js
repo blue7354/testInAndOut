@@ -5,7 +5,7 @@ AV.Cloud.define("hello", function(request, response) {
                 myQuery.find({
                              success:function(results) {
                                  response.success(results.length);
-                             }
+                             },
                              error:function(error) {
                                  response.error(error);
                              }
