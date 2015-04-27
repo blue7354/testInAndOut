@@ -6,8 +6,8 @@ AV.Cloud.define("hello", function(request, response) {
                              success:function(results) {
                                  response.success(results);
                              },
-                             error:function(error) {
-                                 response.error(error);
+                             error:function(err) {
+                                 response.error(err);
                              }
                 });
 });
